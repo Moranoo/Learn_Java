@@ -1,0 +1,9 @@
+src/main/java : Dossier pour ton code source Java.
+src/test/java : Dossier pour tes tests Java.
+pom.xml : Fichier de configuration Maven qui gère les dépendances et d'autres paramètres de projet.
+
+Écrire du code : Ajoute tes fichiers Java dans src/main/java sous le package approprié.
+Compiler le projet : Retourne dans le terminal et tape mvn package. Cela compilera ton projet et créera un fichier JAR exécutable dans le dossier target.
+Exécuter le projet : Tu peux exécuter le projet avec java -cp target/monProjetJava-1.0-SNAPSHOT.jar com.example.App, où App est ta classe principale.
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=monProjetJava -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
